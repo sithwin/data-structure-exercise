@@ -1,3 +1,5 @@
+package com.example.datastructure.linkedlist;
+
 import java.util.HashSet;
 
 public class Questions {
