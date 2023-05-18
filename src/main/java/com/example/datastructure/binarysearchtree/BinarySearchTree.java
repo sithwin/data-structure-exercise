@@ -54,4 +54,19 @@ public class BinarySearchTree {
     return false;
   }
 
+  private boolean rContain(BinarySearchTree.Node node, int value) {
+    if (node == null) return false;
+
+    if (node.value == value) return true;
+
+    if (value < node.value) {
+      return rContain(node.left, value);
+    } else  {
+      return rContain(node.right, value);
+    }
+  }
+
+  boolean rContain(int value) {
+    return rContain(root, value);
+  }
 }
