@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ReverseArray {
   public static void reverse(int[] array) {
     int length = array.length;
-    for (int i = 0; i < length / 2; i++) {
+    for (int i = 0; i < length / 2; i++) {  // O(N/2) => 0(N)
       // right side
       int rightIndex = array.length - 1 - i;
       int left = array[i];
